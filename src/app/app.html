@@ -1,0 +1,30 @@
+<main>
+  <header>
+    <h1>Binding2</h1>
+    <p>Лабораторна робота №1. Прив’язка CSS-класів і стилів.</p>
+  </header>
+
+  <section aria-labelledby="task-6">
+    <h2 id="task-6">Вправа 6. Прив’язка CSS-класів</h2>
+
+    <label>
+      <input type="checkbox" [(ngModel)]="isRed">
+      Змінити червоний блок
+    </label>
+
+    <div class="examples">
+      <div>
+        <div class="box" [class.isredbox]="isRed()"></div>
+        <p>Перший блок</p>
+      </div>
+      <div>
+        <div class="box" [class.isredbox]="!isRed()"></div>
+        <p>Другий блок</p>
+      </div>
+      <div>
+        <div class="box" [class]="blueClass"></div>
+        <p>Синій блок</p>
+      </div>
+    </div>
+  </section>
+</main>
