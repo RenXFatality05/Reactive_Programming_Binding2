@@ -10,4 +10,5 @@ import { FormsModule } from '@angular/forms';
 export class App {
   protected readonly isRed = signal(false);
   protected readonly blueClass = 'isbluebox';
+  protected readonly isYellow = signal(false);
 }

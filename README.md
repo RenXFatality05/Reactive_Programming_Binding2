@@ -22,3 +22,4 @@ npm.cmd run build
 ## Вправи
 
 - `task-6`: перемикач червоного блоку через `[class.isredbox]` і синій блок через `[class]`.
+- `task-7`: усі приклади з вправи 6 і перемикач кольорів через `[style.backgroundColor]` та `[style.background-color]`.

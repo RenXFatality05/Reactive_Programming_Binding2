@@ -27,4 +27,24 @@
       </div>
     </div>
   </section>
+
+  <section aria-labelledby="task-7">
+    <h2 id="task-7">Вправа 7. Прив’язка стилів</h2>
+
+    <label>
+      <input type="checkbox" [(ngModel)]="isYellow">
+      Поміняти жовтий і синій кольори місцями
+    </label>
+
+    <div class="examples">
+      <div>
+        <div class="box" [style.backgroundColor]="isYellow() ? 'yellow' : 'blue'"></div>
+        <p>Перший блок</p>
+      </div>
+      <div>
+        <div class="box" [style.background-color]="!isYellow() ? 'yellow' : 'blue'"></div>
+        <p>Другий блок</p>
+      </div>
+    </div>
+  </section>
 </main>
